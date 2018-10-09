@@ -584,6 +584,9 @@ public:
    */
 
 private:
+  // Make Copy constructor unaccessable
+  NodeHandle_(const NodeHandle_& nh);
+
   bool param_recieved;
   rosserial_msgs::RequestParamResponse req_param_resp;
 
